@@ -1,0 +1,216 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  height: 100vh;
+  background-image: url(./Imagens/photo-1579438593324-63f0523989d3.jpg);
+}
+
+header {
+  height: 18vh;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  position: fixed;
+  background-image: url(./Imagens/photo-1579438593324-63f0523989d3.jpg);
+}
+
+.title {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.title h1 {
+  font-size: 30px;
+  align-self: center;
+  color: white;
+}
+
+.container {
+  padding-left: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: green; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: lightgreen; /* Add a dark-grey background on hover */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 120vh;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+/*main button {
+  min-width: 400px;
+  min-height: 400px;
+  font-size: 30px;
+}*/
+
+main .calcPomo {
+  display: flex;
+  padding: 10px;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+}
+
+main .botaoCalculadora {
+  padding: 20px;
+  background-color: lightgray;
+  cursor: pointer;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+
+main .botaoCalculadora img {
+  width: 150px;
+  height: 150px;
+}
+
+main .botaoPomodoro {
+  padding: 20px;
+  background-color: lightgray;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+main .botaoPomodoro img {
+  width: 150px;
+  height: 150px;
+}
+
+main .wheelForms {
+  display: flex;
+  padding: 10px;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+}
+
+main .botaoWheel {
+  padding: 20px;
+  background-color: lightgray;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+main .botaoWheel img {
+  width: 150px;
+  height: 150px;
+}
+
+main .botaoForms {
+  padding: 20px;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+main .botaoForms img {
+  width: 150px;
+  height: 150px;
+}
+
+footer {
+  height: 20vh;
+  display: flex;
+  max-width: 100vw;
+  align-items: center;
+  justify-items: center;
+}
+
+footer .contato {
+  padding: 20px;
+  color: white;
+}
+
+footer .contatos {
+  display: flex;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+
+footer .facebook img {
+  max-width: 48px;
+  max-height: 48px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+footer .whatsapp img {
+  max-width: 55px;
+  max-height: 55px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+footer .instagram img {
+  max-width: 50px;
+  max-height: 50px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+footer .twitter img {
+  max-width: 50px;
+  max-height: 48px;
+  margin-top: 5px;
+}
